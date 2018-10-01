@@ -1,0 +1,18 @@
+name = Bootstrap Elements
+description = Upgrade form elements for use with bootstrap enabled themes.
+core = 7.x
+dependencies[] = webform
+
+; Information added by Drupal.org packaging script on 2016-02-10
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "bootstrap_elements"
+datestamp = "1455095042"
+
+
+; Information added by Drupal.org packaging script on 2016-02-26
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "bootstrap_elements"
+datestamp = "1456480742"
+

@@ -1,0 +1,14 @@
+name = "cSupport Live Chat Plugin"
+description = "Adds an inline live chat button powered by <a href=\"https://csupporthq.com/\" target=\"_blank\">cSupport Live Chat</a>"
+package = "Third-party Integration"
+core = 7.x
+files[] = csupport.module
+files[] = csupport.admin.inc
+files[] = csupport.install
+configure = admin/config/system/csupport
+; Information added by drupal.org packaging script on 2013-07-10
+version = "7.x-1.0"
+core = "7.x"
+project = "live-chat"
+datestamp = "1373422935"
+

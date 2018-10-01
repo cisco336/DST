@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Installation file for cSupport Live Chat module
+ * Adds an inline live chat button powered by cSupport
+ * to the bottom of all your Drupal pages
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function csupport_install() {
+  variable_set('csupport_type', 'chat-float-inline');
+  variable_set('csupport_id', '');
+  variable_set('csupport_autofill', 1);
+  variable_set('csupport_autostart', 0);
+
+  variable_set('csupport_position', 'b-r');
+  variable_set('csupport_margin', '');
+  variable_set('csupport_bgcolor', '');
+
+  variable_set('csupport_visibility_roles', array());
+  variable_set('csupport_visibility_pages_type', 0);
+  variable_set('csupport_visibility_pages', implode(PHP_EOL, array('admin', 'admin/*', 'user/*/*', 'node/add*', 'node/*/*'))); // Default admin pages removed
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function csupport_uninstall() {
+  variable_del('csupport_type');
+  variable_del('csupport_id');
+  variable_del('csupport_autofill');
+  variable_del('csupport_autostart');
+
+  variable_del('csupport_position');
+  variable_del('csupport_margin');
+  variable_del('csupport_bgcolor');
+
+  variable_del('csupport_visibility_roles');
+  variable_del('csupport_visibility_pages_type');
+  variable_del('csupport_visibility_pages');
+}
